@@ -1,0 +1,27 @@
+{
+  "name": "api-contabilidad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --experimental-json-modules  src/index.js  --exec  babel-node ",
+    "start": "node dist/index.js",
+    "build": "babel src --out-dir dist"
+  },
+  "author": "carlos Valenzuela",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "body": "^5.1.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.1.0",
+    "parser": "^0.1.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0"
+  }
+}
